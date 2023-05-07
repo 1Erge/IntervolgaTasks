@@ -1,0 +1,6 @@
+SELECT a.name, COUNT(r.result_id) AS num_results
+FROM Athletes a
+LEFT JOIN Results r ON a.athlete_id = r.athlete_id
+GROUP BY a.name
+ORDER BY num_results DESC
+LIMIT 5;

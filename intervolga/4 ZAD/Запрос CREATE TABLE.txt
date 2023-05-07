@@ -1,0 +1,13 @@
+CREATE TABLE Athletes (
+    id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50),
+    phone VARCHAR(20),
+    birthdate DATE,
+    age INT,
+    created_at DATETIME,
+    passport VARCHAR(20),
+    average_place INT,
+    biography TEXT,
+    video_presentation TEXT
+);
